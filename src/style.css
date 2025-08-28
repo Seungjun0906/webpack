@@ -1,5 +1,25 @@
-.hello {
+@font-face {
+  font-family: "NanumSquareNeo";
+  src: url("./NanumSquareNeoTTF-aLt.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumSquareNeo";
+  src: url("./NanumSquareNeoTTF-bRg.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hello,
+.world {
+  font-family: "NanumSquareNeo";
+  font-weight: 400;
   color: red;
-  background: url("./info.png");
-  background-repeat: no-repeat;
+}
+
+.world {
+  font-weight: 500;
+  color: blue;
 }
