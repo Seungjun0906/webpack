@@ -1,0 +1,46 @@
+# This is a sample YAML configuration file
+---
+# Document start marker (optional)
+
+# Basic key-value pairs (mappings)
+application_name: MyAwesomeApp
+version: 1.0.0
+debug_mode: true
+port: 8080
+
+# Lists (sequences)
+features:
+  - user_authentication
+  - data_encryption
+  - logging
+
+# Nested structures (mapping within mapping)
+database:
+  type: PostgreSQL
+  host: localhost
+  port: 5432
+  username: admin
+  password: secure_password # Consider using environment variables for sensitive data
+
+# List of mappings (sequence of objects)
+users:
+  - id: 1
+    name: Alice
+    email: alice@example.com
+  - id: 2
+    name: Bob
+    email: bob@example.com
+    roles:
+      - admin
+      - editor
+
+# Multi-line strings (folded style)
+welcome_message: >
+  Welcome to MyAwesomeApp!
+  This application helps you manage your data efficiently.
+
+# Multi-line strings (literal style)
+license_agreement: |
+  Terms and Conditions:
+  1. Use of this software is subject to the terms herein.
+  2. Redistribution is prohibited without express permission.

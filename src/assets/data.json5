@@ -1,0 +1,10 @@
+{
+  title: "JSON5 예제",
+
+  keyWithoutQuotes: "이것은 큰따옴표 없이도 인용될 수 있습니다.",
+  singleQuotes: "작은따옴표도 가능합니다.",
+
+  multiLineString: "이것은 여러 줄 문자열입니다",
+
+  trailingComma: true,
+}

@@ -1,6 +1,17 @@
 import _ from "lodash";
 import "./style.css";
 import Icon from "./info.png";
+// import dataCSV from "./data.csv";
+// import dataXML from "./data.xml";
+import dataJSON from "@assets/data.json";
+import dataTOML from "@assets/data.toml";
+import dataYAML from "@assets/data.yaml";
+import dataJSON5 from "@assets/data.json5";
+
+console.log(dataJSON);
+console.log(dataTOML);
+console.log(dataYAML);
+console.log(dataJSON5);
 
 function component() {
   const element = document.createElement("div");
@@ -17,6 +28,7 @@ function component() {
   span2.classList.add("world");
 
   element.appendChild(span2);
+  console.log(dataJSON);
 
   // element.innerHTML = _.join(["Hello", "webpack", " "]);
   // element.classList.add("hello");
@@ -26,6 +38,9 @@ function component() {
   myIcon.src = Icon;
 
   element.appendChild(myIcon);
+
+  // console.log(dataCSV);
+  // console.log(dataXML);
 
   return element;
 }
